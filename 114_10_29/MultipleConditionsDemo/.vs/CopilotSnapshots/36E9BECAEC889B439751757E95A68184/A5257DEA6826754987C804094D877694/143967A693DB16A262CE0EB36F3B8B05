@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MultipleConditionsDemo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int score = int.Parse(textBox1.Text);
+                string grade;
+
+                if (score >= 90)
+                {
+                    grade = "A";
+                }
+                else if (score >= 80)
+                {
+                    grade = "B";
+                }
+                else if (score >= 70)
+                {
+                    grade = "C";
+                }
+                else if (score >= 60)
+                {
+                    grade = "D";
+                }
+                else
+                {
+                    grade = "F";
+                }
+
+                // 顯示等級到 label3
+                label3.Text = grade;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("請輸入有效的數字成績.", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // 可按需把按鈕行為實作成與 TextChanged 相同的判斷
+            try
+            {
+                int score = int.Parse(textBox1.Text);
+                string grade;
+
+                if (score >= 90)
+                    grade = "A";
+                else if (score >= 80)
+                    grade = "B";
+                else if (score >= 70)
+                    grade = "C";
+                else if (score >= 60)
+                    grade = "D";
+                else
+                    grade = "F";
+
+                // 顯示等級到 label3（修正：原先錯誤使用 grade.Text）
+                label3.Text = grade;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("請輸入有效的數字成績.", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            // 不需要處理
+        }
+
+        private void Grade_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
