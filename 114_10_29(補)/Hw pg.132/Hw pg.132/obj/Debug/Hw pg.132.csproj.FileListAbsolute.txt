@@ -1,0 +1,11 @@
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\bin\Debug\Hw pg.132.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\bin\Debug\Hw pg.132.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\bin\Debug\Hw pg.132.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw pg.132.csproj.AssemblyReference.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw_pg._132.Form1.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw_pg._132.Properties.Resources.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw pg.132.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw pg.132.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw pg.132.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw pg.132.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.132\Hw pg.132\obj\Debug\Hw pg.132.exe.config

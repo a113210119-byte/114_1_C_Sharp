@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Hw_pg._213
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void totalIncome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grossIncome_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void calculation_Click(object sender, EventArgs e)
+        {
+            // Parse inputs as numbers, validate, and perform calculations
+            double total;
+            if (!double.TryParse(totalIncome.Text, out total))
+            {
+                MessageBox.Show("Please enter a valid number for Total Income.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                totalIncome.Focus();
+                return;
+            }
+
+            double exempt = 0.0;
+            if (!string.IsNullOrWhiteSpace(exemptions.Text) && !double.TryParse(exemptions.Text, out exempt))
+            {
+                MessageBox.Show("Please enter a valid number for Exemptions.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                exemptions.Focus();
+                return;
+            }
+
+            // Gross income is the total income in this form
+            double gross = total;
+            grossIncome.Text = gross.ToString("N2");
+
+            // Net income = total - exemptions
+            double net = total - exempt;
+            netIncome.Text = net.ToString("N2");
+
+            // Tax payable = net * 15%
+            double tax = net * 0.15;
+            taxPayable.Text = tax.ToString("N2");
+
+         
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

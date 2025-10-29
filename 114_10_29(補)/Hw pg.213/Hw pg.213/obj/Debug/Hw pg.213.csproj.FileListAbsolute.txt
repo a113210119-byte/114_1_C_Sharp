@@ -1,0 +1,11 @@
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\bin\Debug\Hw pg.213.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\bin\Debug\Hw pg.213.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\bin\Debug\Hw pg.213.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw pg.213.csproj.AssemblyReference.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw_pg._213.Form1.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw_pg._213.Properties.Resources.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw pg.213.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw pg.213.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw pg.213.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw pg.213.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\Hw pg.213\Hw pg.213\obj\Debug\Hw pg.213.exe.config
