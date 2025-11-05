@@ -1,0 +1,167 @@
+﻿namespace Fuel_Economy_with_TryParse
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// 初始化元件。
+        /// 以下方法由設計工具自動產生。請勿任意修改方法內之結構，
+        /// 但可以在此處修改元件屬性（例如文字與字型大小）。
+        /// 這裡加入繁體中文註解以利理解每一段的用途。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            // 建立並初始化表單上的各個控制項。
+            this.exitButton = new System.Windows.Forms.Button();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.mpgLabel = new System.Windows.Forms.Label();
+            this.outputDescriptionLabel = new System.Windows.Forms.Label();
+            this.gallonsTextBox = new System.Windows.Forms.TextBox();
+            this.milesTextBox = new System.Windows.Forms.TextBox();
+            this.gallonsPromptLabel = new System.Windows.Forms.Label();
+            this.milesPromptLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // exitButton
+            // 
+            // 設定「結束」按鈕的位置、大小、文字與字型大小（繁體中文）
+            this.exitButton.Location = new System.Drawing.Point(145, 134);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 35);
+            this.exitButton.TabIndex = 15;
+            this.exitButton.Text = "結束"; // 將按鈕文字改為繁體中文
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 設定字型為預設字型、大小18
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // calculateButton
+            // 
+            // 設定「計算 MPG」按鈕的位置、大小、文字與字型大小（繁體中文）
+            this.calculateButton.Location = new System.Drawing.Point(64, 134);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(75, 35);
+            this.calculateButton.TabIndex = 14;
+            this.calculateButton.Text = "計算 MPG"; // 將按鈕文字改為繁體中文
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            // 
+            // mpgLabel
+            // 
+            // 設定顯示 MPG 結果的標籤；文字內容保留空白以便程式動態填入
+            this.mpgLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mpgLabel.Location = new System.Drawing.Point(176, 79);
+            this.mpgLabel.Name = "mpgLabel";
+            this.mpgLabel.Size = new System.Drawing.Size(100, 23);
+            this.mpgLabel.TabIndex = 13;
+            this.mpgLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 設定字型為預設字型、大小18（即使目前沒有文字，未來顯示也會是18pt）
+            this.mpgLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // outputDescriptionLabel
+            // 
+            // 說明 MPG 顯示欄位的標籤，將文字改為繁體中文並調整字型大小
+            this.outputDescriptionLabel.AutoSize = true;
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(84, 85);
+            this.outputDescriptionLabel.Name = "outputDescriptionLabel";
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(84, 13);
+            this.outputDescriptionLabel.TabIndex = 12;
+            this.outputDescriptionLabel.Text = "您的每加侖英里數："; // 將文字改為繁體中文
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // gallonsTextBox
+            // 
+            // 加侖輸入欄位，設定字型大小以方便閱讀
+            this.gallonsTextBox.Location = new System.Drawing.Point(176, 40);
+            this.gallonsTextBox.Name = "gallonsTextBox";
+            this.gallonsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.gallonsTextBox.TabIndex = 11;
+            this.gallonsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // milesTextBox
+            // 
+            // 里程輸入欄位，設定字型大小以方便閱讀
+            this.milesTextBox.Location = new System.Drawing.Point(176, 12);
+            this.milesTextBox.Name = "milesTextBox";
+            this.milesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.milesTextBox.TabIndex = 10;
+            this.milesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // gallonsPromptLabel
+            // 
+            // 加侖提示標籤，將文字改為繁體中文並調整字型大小
+            this.gallonsPromptLabel.AutoSize = true;
+            this.gallonsPromptLabel.Location = new System.Drawing.Point(21, 43);
+            this.gallonsPromptLabel.Name = "gallonsPromptLabel";
+            this.gallonsPromptLabel.Size = new System.Drawing.Size(147, 13);
+            this.gallonsPromptLabel.TabIndex = 9;
+            this.gallonsPromptLabel.Text = "請輸入使用的加侖數："; // 繁體中文
+            this.gallonsPromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // milesPromptLabel
+            // 
+            // 里程提示標籤，將文字改為繁體中文並調整字型大小
+            this.milesPromptLabel.AutoSize = true;
+            this.milesPromptLabel.Location = new System.Drawing.Point(9, 15);
+            this.milesPromptLabel.Name = "milesPromptLabel";
+            this.milesPromptLabel.Size = new System.Drawing.Size(161, 13);
+            this.milesPromptLabel.TabIndex = 8;
+            this.milesPromptLabel.Text = "請輸入行駛的英里數："; // 繁體中文
+            this.milesPromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // Form1
+            // 
+            // 設定表單的自動縮放、大小、標題文字（繁體中文）、以及將先前建立的控制項加入表單
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 181);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.mpgLabel);
+            this.Controls.Add(this.outputDescriptionLabel);
+            this.Controls.Add(this.gallonsTextBox);
+            this.Controls.Add(this.milesTextBox);
+            this.Controls.Add(this.gallonsPromptLabel);
+            this.Controls.Add(this.milesPromptLabel);
+            this.Name = "Form1";
+            this.Text = "油耗計算"; // 將表單標題改為繁體中文
+            // 設定整個表單的字型為18pt，讓預設控制項字型一致
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Label mpgLabel;
+        private System.Windows.Forms.Label outputDescriptionLabel;
+        private System.Windows.Forms.TextBox gallonsTextBox;
+        private System.Windows.Forms.TextBox milesTextBox;
+        private System.Windows.Forms.Label gallonsPromptLabel;
+        private System.Windows.Forms.Label milesPromptLabel;
+    }
+}
+
