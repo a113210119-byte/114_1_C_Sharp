@@ -1,0 +1,111 @@
+﻿namespace Total_Sales
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.outputDescriptionLabel = new System.Windows.Forms.Label();
+            this.totalLabel = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // outputDescriptionLabel
+            // 
+            // 註解：輸出說明標籤，顯示總銷售額的文字說明。已將文字改為繁體中文並設定字型為繁體中文字型（Microsoft JhengHei）字號 18。
+            this.outputDescriptionLabel.AutoSize = true;
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(29, 28);
+            this.outputDescriptionLabel.Name = "outputDescriptionLabel";
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(63, 13);
+            this.outputDescriptionLabel.TabIndex = 0;
+            this.outputDescriptionLabel.Text = "總銷售額:"; // 繁體中文
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            // 
+            // totalLabel
+            // 
+            // 註解：顯示計算後的總銷售額。這個 Label 使用邊框並置中顯示內容，字型已設定為繁體中文字型，字號 18。
+            this.totalLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalLabel.Location = new System.Drawing.Point(98, 23);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(100, 23);
+            this.totalLabel.TabIndex = 1;
+            this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.totalLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            // 保持初始為空字串，程式運行時計算後填入數值
+            this.totalLabel.Text = "";
+            // 
+            // calculateButton
+            // 
+            // 註解：計算按鈕，按下時會讀取銷售資料並計算總額。文字已改為繁體中文，字型設為繁體中文字型，字號 18。
+            this.calculateButton.Location = new System.Drawing.Point(13, 68);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(97, 51);
+            this.calculateButton.TabIndex = 2;
+            this.calculateButton.Text = "讀取銷售數據並計算總額"; // 繁體中文
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            // 
+            // exitButton
+            // 
+            // 註解：離開按鈕，按下時會關閉視窗。文字已改為繁體中文，字型設為繁體中文字型，字號 18。
+            this.exitButton.Location = new System.Drawing.Point(116, 68);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(97, 51);
+            this.exitButton.TabIndex = 3;
+            this.exitButton.Text = "離開"; // 繁體中文（由原先 "退出" 改為更常用的 "離開"）
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.exitButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            // 
+            // Form1
+            // 
+            // 註解：表單本體，設定視窗標題為繁體中文並將表單預設字型設為繁體中文字型、字號 18，以便子元件繼承（個別元件也已明確設定字型）。
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(227, 135);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.totalLabel);
+            this.Controls.Add(this.outputDescriptionLabel);
+            this.Name = "Form1";
+            this.Text = "總銷售額"; // 繁體中文視窗標題
+            this.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label outputDescriptionLabel;
+        private System.Windows.Forms.Label totalLabel;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitButton;
+    }
+}
+
