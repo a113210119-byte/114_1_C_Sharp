@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnShowMax_Click(object sender, EventArgs e)
+        {
+            // parse scores
+            double s1, s2, s3;
+            bool ok1 = double.TryParse(txtScore1.Text, out s1);
+            bool ok2 = double.TryParse(txtScore2.Text, out s2);
+            bool ok3 = double.TryParse(txtScore3.Text, out s3);
+
+            if (!ok1 || !ok2 || !ok3)
+            {
+                MessageBox.Show("請輸入有效的數字成績", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            double max = Math.Max(s1, Math.Max(s2, s3));
+            string name = (txtLastName.Text + " " + txtFirstName.Text).Trim();
+            if (string.IsNullOrEmpty(name)) name = "學生";
+
+            labelResult.Text = $"{name} 的最高分: {max}";
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

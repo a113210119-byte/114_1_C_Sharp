@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+
+namespace Total_Sales
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            decimal totalSales = 0m;
+
+            try
+            {
+                // 使用 using 確保檔案會被正確關閉
+                using (StreamReader inputFile = File.OpenText("Sales.txt"))
+                {
+                    salesListBox.Items.Clear();
+
+                    while (!inputFile.EndOfStream)
+                    {
+                        string line = inputFile.ReadLine();
+                        if (string.IsNullOrWhiteSpace(line))
+                        {
+                            // 跳過空行
+                            continue;
+                        }
+
+                        // 將每一行加入 ListBox 以顯示原始資料
+                        salesListBox.Items.Add(line);
+
+                        // 嘗試解析為 decimal，若解析成功則累計，否則顯示錯誤並停止處理
+                        if (decimal.TryParse(line, out decimal currentSales))
+                        {
+                            totalSales += currentSales;
+                        }
+                        else
+                        {
+                            MessageBox.Show("無法解析的銷售額：" + line, "解析錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+                }
+
+                // 顯示格式化後的總額
+                totalLabel.Text = totalSales.ToString("C");
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("找不到 Sales.txt 檔案。", "檔案不存在", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("發生錯誤：" + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單
+            this.Close();
+        }
+    }
+}
